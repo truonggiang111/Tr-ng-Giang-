@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--Bài 1 -->
+
+    <div class="name">
+        <div>Bài 1</div>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Giải phương trình bậc nhất</title>
+            <link rel="stylesheet" href="CSS.css">
+        </head>
+
+        <body>
+
+            <div class="container">
+                <h1>Giải phương trình bậc nhất</h1>
+                <form action="" class="bai1-form">
+                    <input type="number" name="number-a" id="numb-a" placeholder="Nhập hệ số a">
+                    <br>
+                    <input type="number" name="number-b" id="numb-b" placeholder="Nhập hệ số b">
+                    <br>
+                    <button type="button" onclick="divide()">Giải phương trình</button>
+                </form>
+                <h4>KẾT QUẢ : </h4>
+                <div id="ketqua">
+                    <span></span>
+                </div>
+            </div>
+
+            <script src="JS.js"></script>
+
+        </body>
+
+        <!--Bài 2 -->
+
+        <div class="name">
+            <div>Bài 2</div>
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Đóng góp ý kiến về sản phẩm</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+
+            <body>
+
+                <div class="container">
+                    <h1>Đóng góp ý kiến về sản phẩm</h1>
+                    <form action="" class="feedback-form">
+                        <div class="input-container">
+                            <input type="text" name="ten" id="input-name" placeholder="Họ và tên" class="input-field">
+                            <input type="text" name="phoneNumb" id="input-phone" placeholder="Số điện thoại" class="input-field">
+                            <select type="text" name="option" id="input-option" class="input-field">
+                            <option value="1" disabled selected>Chọn loại khách hàng</option>
+                            <option value="2">VIP</option>
+                            <option value="3">VVIP</option>
+                        </select>
+                            <input type="text" name="CardId" id="input-card" placeholder="Mã thẻ" class="input-field">
+                            <input type="email" name="email" id="input-email" placeholder="E-mail" class="input-field">
+                            <input type="text" name="invoiceId" id="input-invoice" placeholder="Mã hóa đơn" class="input-field">
+                        </div>
+                        <textarea id="input-description" class="input-textarea" placeholder="Nhập chi tiết mô tả" required></textarea>
+                        <button class="submit-btn" type="submit" onclick="submitFeedback()">Gửi ý kiến</button>
+                    </form>
+                </div>
+
+                <script src="script.js"></script>
+
+            </body>
+
+            <!--Bài 3 -->
+            <div class="name">Bài 3</div>
+            <h1 class="bai3-heading">LIÊN HỆ</h1>
+            <div class="line"></div>
+            <div class="bai3-form">
+                <div class="bai3-info">
+                    <h4>Thông tin liên hệ</h4>
+                    <ul>
+                        <li>Địa chỉ: Gò Vấp, Hồ Chí Minh</li>
+                        <li>Email: dangtruonggiangphuyen@gmail.com</li>
+                        <li>Số điện thoại: 0989683058</li>
+                    </ul>
+                </div>
+                <div class="bai3-info">
+                    <h4 class="bai3-form-heading">Hãy liên hệ với chúng tôi bất cứ khi nào bạn cần !!!</h4>
+                    <form action="" class="bai3-formcontainer">
+                        <input type="text" name="ten" id="bai3-ten" placeholder="Họ và Tên">
+                        <input type="email" name="email" id="bai3-email" placeholder="Địa chỉ email">
+                        <input type="text" name="title" id="bai3-title" placeholder="Tiêu đề">
+                        <textarea id="bai3-input-description" class="bai3-textarea" placeholder="Nội dung cần gửi" required></textarea>
+                    </form>
+                    <button class="bai3-form" type="submit" onclick="bai3()">Gửi tin nhắn</button>
+                </div>
+            </div>
+
+            <!--Bài 4 -->
+
+            <div class="name">Bài 4</div>
+            <div class="bai4">
+                <div class="bai4-container">
+                    <div class="bai4-heading">
+                        TÍNH CHỈ SỐ BMI
+                    </div>
+                    <form action="" class="bai4-form">
+                        <div class="weight">
+                            <label for="weight">Nhập cân nặng (kg) ?</label><br>
+                            <input type="text" name="weight" id="weight">
+                        </div>
+                        <div class="height">
+                            <label for="height">Nhập chiều cao (m) ?</label><br>
+                            <input type="text" name="height" id="height">
+                        </div>
+                        <div class="bai4-option">
+                            <label for="option">Chọn loại tuổi ?</label><br>
+                            <select name="" id="bai4-select" class="bai3-select">
+                    <option value="" id="bai4-0">Chọn</option>
+                    <option value="1"  id="bai4-1">Trung niên</option>
+                    <option value="2"  id="bai4-2">Trung niên , già lớn tuổi</option>
+                    <option value="3" id="bai4-3">Già , lớn tuổi</option>
+               </select>
+                        </div>
+                        <input type="button" value="Tính BMI" class="bai4-button" onclick="bai4()">
+                    </form>
+                    <div class="ketqua">
+                        KẾT QUẢ:
+                        <div id="bai4-number"></div>
+                        <div id="categories"></div>
+                        <div id="message"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bài 5 -->
+            <div class="name">Bài 5</div>
+            <div class="bai5">
+                <div class="bai5-container">
+                    <h4 class="bai5-heading">Login</h4>
+                    <form action="">
+                        <input type="text" class="bai5-name" placeholder="Tên TK"><br>
+                        <input type="password" name="" id="bai5-password" class="bai5-pass" placeholder="Mật khẩu">
+                        <input type="button" value="🔒" class="bai5-btn" onclick="bai5()">
+                    </form>
+
+                </div>
+            </div>
+            <!--Bài 6 -->
+
+            <body>
+                <div class="name">Bài 6</div>
+                <div class="bai6">
+                    <div class="bai6-container">
+                        <h3 class="heading">Login</h3>
+                        <p style="color: #333;">Login here using your username and password</p>
+                        <!-- Đổi màu chữ từ đỏ sang xám -->
+                        <form action="" class="bai6-form">
+                            <i class="fa fa-user icon"></i>
+                            <input type="text" id="bai6-username" class="bai6-input"><br>
+                            <i class="fa fa-instagram icon"></i>
+                            <input type="password" id="bai6-password" class="bai6-input">
+                        </form>
+                        <div class="bai6-button">
+                            <span class="bai6-2button" style="color: #333;"> <!-- Đổi màu chữ từ đỏ sang xám -->
+                                Forgot 
+                            </span>
+                            <span class="bai6-2button" style="color: #333;"> <!-- Đổi màu chữ từ đỏ sang xám -->
+                                Sign up
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <script src="JS.js"></script>
+            </body>
+
+</html>

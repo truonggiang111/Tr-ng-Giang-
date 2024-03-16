@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+}
+
+.name {
+    font-size: 20px;
+    color: red;
+    padding: 8px 15px;
+    /* Khoảng cách nội dung */
+}
+
+
+/* Background styles */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #a3ebff, #ffffff);
+    z-index: -1;
+}
+
+
+/* CSS cho phần Bài 1 */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #b3e5fc;
+    /* Màu nền xanh nhạt */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffb74d;
+    /* Màu cam nhạt cho tiêu đề */
+}
+
+.bai1-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffb74d;
+    /* Màu cam nhạt cho viền */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffb74d;
+    /* Màu cam nhạt cho nút */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9800;
+    /* Màu cam sáng khi di chuột qua nút */
+}
+
+#ketqua {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ketqua span {
+    font-weight: bold;
+    color: #ffb74d;
+    /* Màu cam nhạt cho kết quả */
+}
+
+
+/* CSS cho phần Bài 2 */
+
+.bai2 body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.feedback-form {
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: calc(100% - 22px);
+    /* Subtracting padding and border width */
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.input-textarea {
+    width: calc(100% - 22px);
+    /* Subtracting padding and border width */
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* CSS cho phần Bài 3 */
+
+.bai3-heading {
+    color: blue;
+    font-size: 20px;
+}
+
+.bai3-info {
+    color: #333;
+    /* Màu xanh đậm nhạt */
+    list-style: none;
+    font-size: 14px;
+    /* Thu nhỏ kích thước font */
+    padding-bottom: 20px;
+    /* Tạo khoảng cách dưới */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Tạo hiệu ứng khung viền */
+    border-radius: 8px;
+    /* Bo tròn góc */
+    padding: 20px;
+    /* Tạo khoảng cách xung quanh */
+    transition: box-shadow 0.3s ease;
+    /* Thêm transition để tạo hiệu ứng mềm mại */
+}
+
+.bai3-info:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    /* Thay đổi box-shadow khi hover */
+}
+
+.bai3-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* Tạo khoảng cách với phần thông tin liên hệ */
+    padding: 20px;
+    /* Tạo khoảng cách xung quanh */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Tạo hiệu ứng khung viền */
+    border-radius: 8px;
+    /* Bo tròn góc */
+}
+
+.bai3-body {
+    display: flex;
+    justify-content: space-between;
+    /* Canh giữa hai phần tử con */
+}
+
+
+/* CSS cho phần Bài 4 */
+
+.bai4 {
+    width: 65%;
+    height: 500px;
+    background: radial-gradient(circle at 50% 50%, #94d2bd 0%, #2d6a4f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 200px;
+    position: relative;
+    /* Loại bỏ thuộc tính overflow và position */
+}
+
+.bai4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    /* Điều chỉnh mức độ mờ ở đây */
+    z-index: -1;
+    /* Đẩy hiệu ứng mờ xuống phía dưới để không che khuất nội dung */
+}
+
+
+/* Kiểm soát vị trí hiển thị nội dung bên trong .bai4-container */
+
+.bai4-container {
+    position: relative;
+    z-index: 1;
+    /* Đảm bảo nội dung được hiển thị phía trên hiệu ứng mờ */
+}
+
+.bai4-container {
+    height: 450px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.bai4-heading {
+    color: #387ADF;
+    /* Màu sắc tương thích với background xanh nhạt */
+    background: #FFF;
+    /* Màu nền đồng thời */
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    /* Cỡ chữ hiển thị thêm vào */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Hiệu ứng shadow cho văn bản */
+}
+
+.bai4-form {
+    margin-top: 30px;
+}
+
+.bai4-button {
+    margin: 20px;
+    padding: 10px;
+    color: #FFF;
+    /* Màu chữ tương thích với background xanh nhạt */
+    background-color: #387ADF;
+    /* Màu nền tương thích */
+    font-size: 16px;
+    /* Cỡ chữ hiển thị thêm vào */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Hiệu ứng chuyển đổi màu nền khi hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Hiệu ứng shadow cho văn bản */
+}
+
+.bai4-button:hover {
+    background-color: #59D5E0;
+    /* Màu nền khi hover */
+}
+
+
+/* CSS cho phần Bài 5 */
+
+.bai5 {
+    width: 300px;
+    /* Đặt kích thước */
+    height: auto;
+    background-color: #1b7cbd;
+    /* Màu nền xanh nhạt */
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    /* Canh giữa trên và dưới, lề bên trái và phải tự động */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Hiệu ứng bóng đổ */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+}
+
+.bai5-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: #333;
+    align-items: center;
+    /* Canh giữa nội dung theo chiều dọc */
+}
+
+.bai5-heading {
+    margin-bottom: 20px;
+    /* Khoảng cách từ tiêu đề đến các input */
+}
+
+.bai5-name,
+.bai5-pass {
+    width: 100%;
+    /* Độ rộng 100% */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các input */
+    border-radius: 5px;
+    /* Bo tròn góc */
+    border: 1px solid #ccc;
+    /* Viền */
+}
+
+.bai5-btn {
+    width: 50px;
+    /* Độ rộng */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    border: none;
+    border-radius: 5px;
+    /* Bo tròn góc */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Hiệu ứng chuyển đổi màu nền và phóng to */
+    background-color: #ff3333;
+    /* Màu đỏ */
+}
+
+.bai5-btn:hover {
+    background-color: #cc0000;
+    /* Màu đỏ tối khi di chuột qua */
+    transform: scale(1.1);
+    /* Phóng to 110% */
+}
+
+.bai5-btn:active {
+    transform: scale(0.9);
+    /* Phóng to 90% khi được nhấn */
+}
+
+.bai6 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 25px;
+    color: white;
+    /* Màu chữ trắng */
+}
+
+.bai6-container {
+    width: 400px;
+    background: linear-gradient(115deg, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 255, 1) 100%);
+    /* Thay đổi màu nền */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Hiệu ứng chữ nổi */
+}
+
+.bai6-form {
+    position: relative;
+}
+
+.bai6-input {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /* Màu nền trắng */
+}
+
+.bai6-button {
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    /* Màu nền trắng */
+    color: #333;
+    /* Màu chữ xám */
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    /* Sử dụng flexbox */
+    flex-direction: column;
+    /* Chỉ định hướng là dọc */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+.bai6-button:hover {
+    background-color: #eee;
+    /* Màu nền xám nhạt khi di chuột qua */
+}
+
+.bai6-button:active {
+    transform: scale(0.95);
+    /* Phóng to 95% khi được nhấn */
+}
