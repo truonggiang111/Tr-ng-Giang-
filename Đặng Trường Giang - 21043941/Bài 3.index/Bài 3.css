@@ -1,0 +1,79 @@
+body {
+    background-color: #f0f0f0;
+    /* Màu xám nhạt */
+    font-family: Arial, sans-serif;
+}
+
+#dong-gop {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #abebbe, rgb(230, 236, 172));
+    /* Hiệu ứng background linear gradient */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+}
+
+#dong-gop h2,
+#dong-gop h3 {
+    color: #0c1313;
+    /* Màu đen */
+    text-align: center;
+}
+
+#dong-gop h3 {
+    margin-top: 10px;
+}
+
+#dong-gop ul {
+    list-style: none;
+    padding: 0;
+}
+
+#dong-gop ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /* Màu xám nhạt */
+}
+
+#dong-gop ul li .noi-dung {
+    overflow: hidden;
+}
+
+#dong-gop ul li .noi-dung p {
+    margin-bottom: 5px;
+}
+
+#dong-gop ul li .noi-dung strong {
+    font-weight: bold;
+}
+
+#dong-gop form {
+    margin-top: 20px;
+    display: flex;
+}
+
+#dong-gop form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    /* Màu xám nhạt */
+}
+
+#dong-gop form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    /* Màu đen */
+    color: #fff;
+    /* Màu trắng */
+    cursor: pointer;
+}

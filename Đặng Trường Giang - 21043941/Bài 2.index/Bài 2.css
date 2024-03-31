@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E0BBE4;
+    /* Màu lila nhạt */
+}
+
+#box {
+    background-color: #FFFFFF;
+    /* Màu trắng */
+    color: #8B4513;
+    /* Màu sô cô la */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Đổ bóng nhẹ */
+}
+
+#clock {
+    font-size: 48px;
+}
